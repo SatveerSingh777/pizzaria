@@ -57,6 +57,7 @@
 
 .ham-bar {
     display: none;
+    /* border: 1px solid black; */
 }
 
 .navbar.sticky {

@@ -52,7 +52,7 @@ export default function Menu() {
 
       return (
         <div >
-          <div  style={{ display: "flex" }}>
+          <div  style={{ display: "flex" ,flexDirection:'column'}}>
             <div >
               <MenuSlider sendData={handleData} />
             </div>
