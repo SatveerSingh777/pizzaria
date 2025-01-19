@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 750px) {
     .navbar {
         background-color: rgb(255, 255, 255);
@@ -16,10 +15,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* width: 100%; */
         margin: 0px;
         padding: 0px;
-        z-index: -1;
+        z-index: 1; /* Updated z-index */
         transition: all 1s ease-in-out;
         background-color: white;
     }

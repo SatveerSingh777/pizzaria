@@ -4,32 +4,12 @@ import photo from '../Assests/Pizza PNG -.jpeg'
 function MenuCard(props) {
   return (
     <>
-      <div >
-        <div className=" rounded-lg bg-gray-200">
-          <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-            <img
-              alt=""
-              src={photo}
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-
-            <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-              <div className="p-4 sm:p-6">
-                <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
-
-                <a href="/">
-                  <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-                </a>
-
-                <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                  pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                  quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                  atque dignissimos. Molestias explicabo corporis voluptatem?
-                </p>
-              </div>
-            </div>
-          </article>
+      <div className="card" style={{width:" 18rem;"}}>
+        <img src={photo} className="card-img-top" alt="..." />
+        <div className="card-body my-3">
+          <h5 className="card-title my-3">Card title</h5>
+          <p className="card-text my-3">$75/150/250</p>
+          <a href="/" className="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     </>

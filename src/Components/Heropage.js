@@ -2,6 +2,7 @@ import React from 'react'
 import HeroPhoto from './Assests/Pizza PNG -.jpeg'
 import Cards from './Cards'
 import Qualitysec from './Qualitysec'
+import { Link } from 'react-router-dom'
 
 function Heropage() {
     return (
@@ -12,7 +13,7 @@ function Heropage() {
                         <div>
                             <div className="max-w-lg md:max-w-none">
                                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
-                                    Delicious Pizza Delight
+                                    Delicious <div style={{color:"red" ,display:"inline",fontFamily:"'Times New Roman', Times, serif"}}>Pizza</div> Delight
                                 </h2>
 
                                 <p className="mt-4 text-gray-700">
@@ -32,6 +33,11 @@ function Heropage() {
                 </div>
             </section>
             <Cards/>
+            <span className="flex items-center mt-5">
+  <span className="h-px flex-1 bg-black"></span>
+  <span className="shrink-0 px-6"><Link to="/Menu">View More</Link></span>
+  <span className="h-px flex-1 bg-black"></span>
+</span>
             <Qualitysec/>
         </>
     )

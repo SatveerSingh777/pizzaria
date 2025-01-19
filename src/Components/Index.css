@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 0px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0%);
     /* z-index: 100; */
 }
 
@@ -17,8 +19,11 @@
     margin-left: 20px;
 }
 
-.nav-logo img {
-    height: 70px;
+.nav-logo p {
+    font-size: 30px;
+    font-weight: bolder;
+    color: red;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .navbar-Icons {
@@ -35,13 +40,13 @@
     margin-right: 20px;
 }
 
-.navbar-Icons li a{
+.navbar-Icons li a {
     text-decoration: none;
     color: #007bad;
 }
 
 .navbar-Icons li a:hover {
-    color:#dd2939;
+    color: #dd2939;
 }
 
 .Bar {
@@ -52,4 +57,14 @@
 
 .ham-bar {
     display: none;
+}
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
 }
